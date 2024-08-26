@@ -1,0 +1,28 @@
+import pygame
+
+# Initialize Pygame
+pygame.init()
+
+# Set display mode (window size: 800x600)
+win = pygame.display.set_mode((800, 600))
+
+# Set a background color (RGB values)
+background_color = (0, 128, 255)  # Blue color
+
+# Main loop to keep the window open
+run = True
+while run:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+
+    # Fill the window with the background color
+    win.fill(background_color)
+
+    # Update the display
+    pygame.display.update()
+
+# Quit Pygame
+pygame.quit()
+
+pygame.quit()
